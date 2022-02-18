@@ -1,419 +1,530 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Для поиска в сети-->
-    <meta name="description" content="Рада видеть Вас на своей творческой страничке. Меня зовут Мария Джафсия Тара и я фотограф.">
-    <meta property="og:title" content="Услуги фотографа">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="здесь ссылка на сайт">
-    <meta property="og:image" content="картинка для поисковиков">
-    <meta name="keywords" content="услуги, фотограф, Мария, фотосессии">
-    <!-- //Для поиска в сети-->
-    <title>Фотограф Мария</title>
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <h1 class="visually-hidden">Услуги фотографа</h1><!--Неведимка для прохождения Валидатора, h1 должен быть один-->
-    <header class="header">
-      <div class="container header__container">
-        <button id="burger" class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="header__nav" id="menu">
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="#about" class="header__link" aria-label="обо мне">обо мне</a>
-            </li>
-            <li class="header__item">
-              <a href="#portfolio" class="header__link" aria-label="portfolio">портфолио</a>
-            </li>
-            <li class="header__item">
-              <a href="#prices" class="header__link" aria-label="условия и цены">условия и цены</a>
-            </li>
-            <li class="header__item">
-              <a href="#recording" class="header__link" aria-label="запись на фотосессию">запись на фотосессию</a>
-            </li>
-            <li class="header__item">
-              <a href="#reviews" class="header__link" aria-label="отзывы">отзывы</a>
-            </li>
-            <li class="header__item">
-              <a href="#contacts" class="header__link" aria-label="контакты">контакты</a>
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Для поиска в сети-->
+  <meta name="description"
+    content="Рада видеть Вас на своей творческой страничке. Меня зовут Мария Джафсия Тара и я фотограф.">
+  <meta property="og:title" content="Услуги фотографа">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="здесь ссылка на сайт">
+  <meta property="og:image" content="картинка для поисковиков">
+  <meta name="keywords" content="услуги, фотограф, Мария, фотосессии">
+  <!-- //Для поиска в сети-->
+  <title>Фотограф Мария</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1 class="visually-hidden">Услуги фотографа</h1>
+  <!--Неведимка для прохождения Валидатора, h1 должен быть один-->
+  <header class="header">
+    <div class="container header__container">
+      <button id="burger" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav menu" id="menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#about" class="header__link" aria-label="обо мне">обо мне</a>
+          </li>
+          <li class="header__item">
+            <a href="#portfolio" class="header__link" aria-label="portfolio">портфолио</a>
+          </li>
+          <li class="header__item">
+            <a href="#prices" class="header__link" aria-label="условия и цены">условия и цены</a>
+          </li>
+          <li class="header__item">
+            <a href="#recording" class="header__link" aria-label="запись на фотосессию">запись на фотосессию</a>
+          </li>
+          <li class="header__item">
+            <a href="#reviews" class="header__link" aria-label="отзывы">отзывы</a>
+          </li>
+          <li class="header__item">
+            <a href="#footer" class="header__link" aria-label="контакты">контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <img class="hero__logo" src="img/DjafsiaMariaTara.png" alt="Djafsia Maria Tara">
+        <img class="hero__foto" src="img/hero-Maria.png" alt="Фотограф Мария">
       </div>
-    </header>    
-    <main>
-      <section class="hero">
-        <div class="container hero__container">
-          <img class="hero__logo" src="img/DjafsiaMariaTara.png" alt="Djafsia Maria Tara">
-          <img class="hero__foto" src="img/hero-Maria.png" alt="Фотограф Мария">
+    </section>
+    <section class="about" id="about">
+      <div class="container about__container">
+        <img class="about__img" src="img/about-foto.jpg" alt="Фотограф Мария">
+        <div class="about__info">
+          <h2 class="about__title h2">Привет друзья!</h2>
+          <p class="about__desc-574 p">
+            Рада видеть Вас на своей творческой страничке. Меня зовут Мария Джафсия Тара и я фотограф. Фотографией
+            занимаюсь с 2019 года, для меня создание фотографии это творчество, я наслаждаюсь этим процессом от и до! По
+            образованию я ветеринарный врач, но в творческой
+            атмосфере я живу с детства, по этому выбор в сторону фотографии был неизбежен! Я обожаю свою работу и то
+            фантастически красивое и стильное направление в котором я работаю!
+          </p>
+          <p class="about__desc-620 p text-transform">
+            Если вы хотите живую и атмосферную фотосессию, то вам ко мне!!!
+          </p>
+          <a href="#recording" class="about__link link">
+            Заказать фотосессию
+          </a>
         </div>
-      </section>
-      <section class="about" id="about">
-        <div class="container about__container">
-          <img class="about__img" src="img/about-foto.jpg" alt="Фотограф Мария">          
-          <div class="about__info">
-            <h2 class="about__title h2">Привет друзья!</h2>
-            <p class="about__desc-574 p">
-              Рада видеть Вас на своей творческой страничке. Меня зовут Мария Джафсия Тара и я фотограф. Фотографией занимаюсь с 2019 года, для меня создание фотографии это творчество, я наслаждаюсь этим процессом от и до! По образованию я ветеринарный врач, но в творческой атмосфере я живу с детства, по этому выбор в сторону фотографии был неизбежен! Я обожаю свою работу и то фантастически красивое и стильное направление в котором я работаю!
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__container">
+        <ul class="portfolio__grid">
+          <li class="portfolio__item portfolio__item_big">
+            <img src="img/portfolio-1.jpg" alt="fhoto-1" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-2.jpg" alt="fhoto-2" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_big">
+            <img src="img/portfolio-3.jpg" alt="fhoto-3" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-4.jpg" alt="fhoto-4" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_big">
+            <img src="img/portfolio-5.jpg" alt="fhoto-5" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_big">
+            <img src="img/portfolio-6.jpg" alt="fhoto-6" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-7.jpg" alt="fhoto-7" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-8.jpg" alt="fhoto-8" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-9.jpg" alt="fhoto-9" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-10.jpg" alt="fhoto-10" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-11.jpg" alt="fhoto-11" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-12.jpg" alt="fhoto-12" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-13.jpg" alt="fhoto-13" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-14.jpg" alt="fhoto-14" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-15.jpg" alt="fhoto-15" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-16.jpg" alt="fhoto-16" class="portfolio__foto">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="prices" id="prices">
+      <div class="container prices__container">
+        <ul class="prices__list">
+          <li class="prices__item">
+            <div class="prices__img prices__img-1"></div>
+            <div class="prices__flex">
+              <h3 class="prices__h3 h3">
+                2 х часовой пакет семейный <strong class="prices__strong-h3">Family Premium</strong>
+              </h3>
+            </div>
+            <p class="prices__desc p">
+              ✓ организация съёмки , вам нужно только выбрать удобный день и записаться
             </p>
-            <p class="about__desc-620 p text-transform">
-              Если вы хотите живую и атмосферную фотосессию, то вам ко мне!!!
+            <p class="prices__desc p">
+              ✓ фотосессия в течении 2 часов в студии
             </p>
-            <a href="#recording" class="about__link">
+            <p class="prices__desc p">
+              ✓ помощь в позировании
+            </p>
+            <p class="prices__desc p">
+              ✓ аренда студии
+            </p>
+            <p class="prices__desc p">
+              ✓ профессиональный макияж и укладка для одного человека
+            </p>
+            <p class="prices__desc p">
+              ✓ помощь в подборе одежды
+            </p>
+            <p class="prices__desc p">
+              ✓ 20 фотографий в авторской ретуши;
+            </p>
+            <p class="prices__desc p">
+              ✓ весь отснятый материал в формате jpeg
+            </p>
+            <p class="prices__desc p">
+              ✓ фотографии передаются через файлообменник
+            </p>
+            <p class="prices__desc prices__desc_last p">
+              ✓ срок передачи 2 недели
+            </p>
+            <strong>ЦЕНА: 60 000 KZT</strong>
+            <p class="prices__desc prices__desc_snowflake prices__desc_snowflake_1 p">
+              Пакет подходит семейным парам где детям до 12 мес или 3+
+            </p>
+            <a href="#recording" class="prices__link link">
               Заказать фотосессию
             </a>
-          </div>
-        </div>
-      </section>
-      <section class="portfolio" id="portfolio">
-        <div class="portfolio__container">
-          <ul class="portfolio__grid">
-            <li class="portfolio__item portfolio__item_big">
-              <img src="img/portfolio-1.jpg" alt="fhoto-1" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-2.jpg" alt="fhoto-2" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_big">
-              <img src="img/portfolio-3.jpg" alt="fhoto-3" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-4.jpg" alt="fhoto-4" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_big">
-              <img src="img/portfolio-5.jpg" alt="fhoto-5" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_big">
-              <img src="img/portfolio-6.jpg" alt="fhoto-6" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-7.jpg" alt="fhoto-7" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-8.jpg" alt="fhoto-8" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-9.jpg" alt="fhoto-9" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-10.jpg" alt="fhoto-10" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-11.jpg" alt="fhoto-11" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-12.jpg" alt="fhoto-12" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-13.jpg" alt="fhoto-13" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-14.jpg" alt="fhoto-14" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-15.jpg" alt="fhoto-15" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-16.jpg" alt="fhoto-16" class="portfolio__foto">
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="prices" id="prices">
-        <div class="container prices__container">
-          <ul class="prices__list">
-            <li class="prices__item">
-              <div class="prices__img prices__img-1"></div>
-              <div class="prices__flex">
-                <h3 class="prices__h3 h3">
-                  2 х часовой пакет семейный <strong class="prices__strong-h3">Family Premium</strong>
-                </h3>
-              </div>
-              <p class="prices__desc p">
-                ✓ организация съёмки , вам нужно только выбрать удобный день и записаться
-              </p>
-              <p class="prices__desc p"> 
-              ✓ фотосессия в течении 2 часов в студии 
-              </p>
-              <p class="prices__desc p">
+          </li>
+          <li class="prices__item">
+            <div class="prices__img prices__img-2"></div>
+            <div class="prices__flex">
+              <h3 class="prices__h3 h3">
+                Семейный пакет <strong class="prices__strong-h3">Family</strong>
+              </h3>
+            </div>
+            <p class="prices__desc p">
+              ✓ организация съёмки , вам нужно только выбрать удобный день и записаться
+            </p>
+            <p class="prices__desc p">
+              ✓ фотосессия в течении 1,5 часов в студии
+            </p>
+            <p class="prices__desc p">
               ✓ помощь в позировании
-              </p>
-              <p class="prices__desc p">
+            </p>
+            <p class="prices__desc p">
               ✓ аренда студии
-              </p>
-              <p class="prices__desc p"> 
+            </p>
+            <p class="prices__desc p">
               ✓ профессиональный макияж и укладка для одного человека
-              </p>
-              <p class="prices__desc p"> 
+            </p>
+            <p class="prices__desc p">
               ✓ помощь в подборе одежды
-              </p>
-              <p class="prices__desc p"> 
+            </p>
+            <p class="prices__desc p">
               ✓ 20 фотографий в авторской ретуши;
-              </p>
-              <p class="prices__desc p">
+            </p>
+            <p class="prices__desc p">
               ✓ весь отснятый материал в формате jpeg
-              </p>
-              <p class="prices__desc p"> 
+            </p>
+            <p class="prices__desc p">
               ✓ фотографии передаются через файлообменник
-              </p>
-              <p class="prices__desc prices__desc_last p"> 
-              ✓ срок передачи 2 недели 
-              </p>
-              <strong>ЦЕНА: 60 000 KZT</strong>
-              <p class="prices__desc prices__desc_snowflake prices__desc_snowflake_1 p">
-                Пакет подходит семейным парам где детям до 12 мес или 3+ 
-              </p>
-              <a href="#recording" class="prices__link">
-                Заказать фотосессию
-              </a>
-            </li>
-            <li class="prices__item">
-              <div class="prices__img prices__img-2"></div>
-              <div class="prices__flex">
-                <h3 class="prices__h3 h3">
-                  Семейный пакет <strong class="prices__strong-h3">Family</strong>
-                </h3>
-              </div>
-              <p class="prices__desc p">
-                ✓ организация съёмки , вам нужно только выбрать удобный день и записаться
-              </p>
-              <p class="prices__desc p">
-                ✓ фотосессия в течении 1,5 часов в студии
-              </p> 
-              <p class="prices__desc p"> 
-                ✓ помощь в позировании
-              </p>
-              <p class="prices__desc p">
-                ✓ аренда студии
-              </p>
-              <p class="prices__desc p"> 
-                ✓ профессиональный макияж и укладка для одного человека
-              </p>
-              <p class="prices__desc p"> 
-                ✓ помощь в подборе одежды
-              </p>
-              <p class="prices__desc p"> 
-                ✓ 20 фотографий в авторской ретуши;
-              </p>
-              <p class="prices__desc p">
-                ✓ весь отснятый материал в формате jpeg
-              </p>
-              <p class="prices__desc p">
-                ✓ фотографии передаются через файлообменник
-              </p> 
-              <p class="prices__desc prices__desc_last p">
-                ✓ срок передачи 4 недели  
-              </p>
-              <strong>ЦЕНА: 45 000 KZT</strong>
-              <p class="prices__desc prices__desc_snowflake prices__desc_snowflake_2 p">
-                Пакет подходит семейный парам в ожидании малыша! Мама+папа, одна мама, возможно участие детей 
-              </p>
-              <a href="#recording" class="prices__link">
-                Заказать фотосессию
-              </a>
-            </li>
-            <li class="prices__item">
-              <div class="prices__img prices__img-3"></div>
-              <div class="prices__flex">
-                <h3 class="prices__h3 h3">
-                  Пакет для девушек <strong class="prices__strong-h3">Woman</strong>
-                </h3>
-              </div>
-              <p class="prices__desc p">
-                ✓ организация съёмки , вам нужно только выбрать удобный день и записаться
-              </p> 
-              <p class="prices__desc p"> 
-                ✓ фотосессия в течении 2 часов в студии
-              </p>
-              <p class="prices__desc p"> 
-                ✓ помощь в позировании
-              </p>
-              <p class="prices__desc p">
-                ✓ аренда студии
-              </p>
-              <p class="prices__desc p"> 
-                ✓ помощь в подборе одежды
-              </p>
-              <p class="prices__desc p"> 
-                ✓ 20 фотографий в авторской ретуши
-              </p>
-              <p class="prices__desc p">
-                ✓ весь отснятый материал в формате jpeg
-              </p>
-              <p class="prices__desc p"> 
-                ✓ фотографии передаются через файлообменник
-              </p>
-              <p class="prices__desc prices__desc_last p"> 
-                ✓ срок передачи 3 недели
-              </p>
-              <strong>ЦЕНА: 30 000 KZT </strong>
-              <p class="prices__desc prices__desc_snowflake prices__desc_snowflake_3 p">
-                Пакет подходит женщинам 
-              </p>
-              <a href="#recording" class="prices__link">
-                Заказать фотосессию
-              </a>
-            </li>
-            <li class="prices__item">
-              <div class="prices__img prices__img-4"></div>
-              <div class="prices__flex">
-                <h3 class="prices__h3 h3">
-                  Пакет мини <strong class="prices__strong-h3">Express</strong>
-                </h3>
-              </div>
-              <p class="prices__desc p">
-                ✓ организация съёмки , вам нужно только выбрать удобный день и записаться 
-              </p>
-              <p class="prices__desc p">  
-                ✓ фотосессия в течении 30 минут в студии или на улице
-              </p>
-              <p class="prices__desc p"> 
-                ✓ помощь в позировании
-              </p> 
-              <p class="prices__desc p">
-                ✓ аренда студии  оплачивается отдельно
-              </p>
-              <p class="prices__desc p"> 
-                ✓ помощь в подборе одежды
-              </p>
-              <p class="prices__desc p"> 
-                ✓ 5 фотографий в авторской ретуши;
-              </p>
-              <p class="prices__desc p">
-                ✓ весь отснятый материал в формате jpeg
-              </p>
-              <p class="prices__desc p"> 
-                ✓фотографии передаются через файлообменник
-              </p>
-              <p class="prices__desc prices__desc_last p">
-                ✓ срок передачи 3 недели
-              </p>    
-              <strong>ЦЕНА : 15000 KZT</strong>
-              <p class="prices__desc prices__desc_snowflake p"></p>
-              <a href="#recording" class="prices__link">
-                Заказать фотосессию
-              </a>              
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="conditions">
-        <div class="container conditions__container">
-          <ul class="conditions__list">
-            <li class="conditions__item">
-              <h2 class="conditions__title h2">1.</h2>
-              <p class="conditions__desc p">
-                Вы согласны на использование фотографий с Вашим изображением, изображением Вашего малыша на моем сайте и в группах соц. сетей. 
-              </p>
-            </li>
-            <li class="conditions__item">
-              <h2 class="conditions__title h2">2.</h2>
-              <p class="conditions__desc p">
-                На макияж и прическу вы приезжаете заранее, подготовка происходит в специальной оборудованной гримерке фотостудии 1 час.
-              </p>
-            </li>
-            <li class="conditions__item">
-              <h2 class="conditions__title h2">3.</h2>
-              <p class="conditions__desc p">
-                Выбор фотографий на ретушь Вы можете сделать сами (по желанию)
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="recording" id="recording">
-        <div class="container recording__container">
-          <h2 class="recording__title h2">Дополнительно можно заказать:</h2>
-          <table class="recording__table">
-            <tbody class="recording__tbody">
-              <tr>
-                <td>Ретушь фото</td>
-                <td>500 тг за фото</td>
-              </tr>
-              <tr>
-                <td>Печать фотографий</td>
-                <td>15*20, 20*30</td>
-              </tr>
-              <tr>
-                <td>Срочная обработка фото</td>
-                <td>в течение 1 недели 10 000 KZT</td>
-              </tr>
-              <tr>
-                <td class="recording__vertical">Печать ФОТО КНИГИ</td>
-                <td class="recording__vertical">
-                  <p>✓ Формат 25*25</p>
-                  <p>✓ 10 разворотов 25 000 KZT</p>
-                  <p>✓ 15 разворотов 30 000 KZT</p>
-                  <p>✓ Верстка и печать фото книги ориентировочно
-                  2 недели</p> 
-                  <p class="recording__desc">в стоимость фото книги входит -  дизайн, 
-                  верстка, печать.</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews__container">
-          <!-- Swiper -->
-          <div class="reviews__swiper swiper mySwiper">
-            <div class="reviews__swiper-wrapper swiper-wrapper">
-              <div class="reviews__swiper-slide swiper-slide">
-                <img class="reviews__photo" src="img/swiper-1.png" alt="Отзыв">
-                <img class="reviews__photo" src="img/swiper-2.png" alt="Отзыв">
-                <img class="reviews__photo" src="img/swiper-3.png" alt="Отзыв">
-                <img class="reviews__photo" src="img/swiper-4.png" alt="Отзыв">
-              </div>
-              <div class="reviews__swiper-slide swiper-slide">
-                <img class="reviews__photo" src="img/swiper-1.png" alt="Отзыв">
-                <img class="reviews__photo" src="img/swiper-2.png" alt="Отзыв">
-                <img class="reviews__photo" src="img/swiper-3.png" alt="Отзыв">
-                <img class="reviews__photo" src="img/swiper-4.png" alt="Отзыв">
-              </div>
-              <div class="reviews__swiper-slide swiper-slide">
-                <img class="reviews__photo" src="img/swiper-1.png" alt="Отзыв">
-                <img class="reviews__photo" src="img/swiper-2.png" alt="Отзыв">
-                <img class="reviews__photo" src="img/swiper-3.png" alt="Отзыв">
-                <img class="reviews__photo" src="img/swiper-4.png" alt="Отзыв">
-              </div>
+            </p>
+            <p class="prices__desc prices__desc_last p">
+              ✓ срок передачи 4 недели
+            </p>
+            <strong>ЦЕНА: 45 000 KZT</strong>
+            <p class="prices__desc prices__desc_snowflake prices__desc_snowflake_2 p">
+              Пакет подходит семейный парам в ожидании малыша! Мама+папа, одна мама, возможно участие детей
+            </p>
+            <a href="#recording" class="prices__link link">
+              Заказать фотосессию
+            </a>
+          </li>
+          <li class="prices__item">
+            <div class="prices__img prices__img-3"></div>
+            <div class="prices__flex">
+              <h3 class="prices__h3 h3">
+                Пакет для девушек <strong class="prices__strong-h3">Woman</strong>
+              </h3>
             </div>
-            <div class="reviews__swiper-button-next swiper-button-next">
-              <svg width="63" height="28" viewbox="0 0 63 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M49.5 1L62.4293 13.9293C62.4683 13.9683 62.4683 14.0317 62.4293 14.0707L49.5 27" stroke="black" stroke-linecap="round"/>
-                <path d="M62 14H1" stroke="black" stroke-linecap="round"/>
-              </svg>
+            <p class="prices__desc p">
+              ✓ организация съёмки , вам нужно только выбрать удобный день и записаться
+            </p>
+            <p class="prices__desc p">
+              ✓ фотосессия в течении 2 часов в студии
+            </p>
+            <p class="prices__desc p">
+              ✓ помощь в позировании
+            </p>
+            <p class="prices__desc p">
+              ✓ аренда студии
+            </p>
+            <p class="prices__desc p">
+              ✓ помощь в подборе одежды
+            </p>
+            <p class="prices__desc p">
+              ✓ 20 фотографий в авторской ретуши
+            </p>
+            <p class="prices__desc p">
+              ✓ весь отснятый материал в формате jpeg
+            </p>
+            <p class="prices__desc p">
+              ✓ фотографии передаются через файлообменник
+            </p>
+            <p class="prices__desc prices__desc_last p">
+              ✓ срок передачи 3 недели
+            </p>
+            <strong>ЦЕНА: 30 000 KZT </strong>
+            <p class="prices__desc prices__desc_snowflake prices__desc_snowflake_3 p">
+              Пакет подходит женщинам
+            </p>
+            <a href="#recording" class="prices__link link">
+              Заказать фотосессию
+            </a>
+          </li>
+          <li class="prices__item">
+            <div class="prices__img prices__img-4"></div>
+            <div class="prices__flex">
+              <h3 class="prices__h3 h3">
+                Пакет мини <strong class="prices__strong-h3">Express</strong>
+              </h3>
             </div>
-            <div class="reviews__swiper-button-prev swiper-button-next">
-              <svg width="63" height="28" viewbox="0 0 63 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M49.5 1L62.4293 13.9293C62.4683 13.9683 62.4683 14.0317 62.4293 14.0707L49.5 27" stroke="black" stroke-linecap="round"/>
-                <path d="M62 14H1" stroke="black" stroke-linecap="round"/>
-              </svg>
+            <p class="prices__desc p">
+              ✓ организация съёмки , вам нужно только выбрать удобный день и записаться
+            </p>
+            <p class="prices__desc p">
+              ✓ фотосессия в течении 30 минут в студии или на улице
+            </p>
+            <p class="prices__desc p">
+              ✓ помощь в позировании
+            </p>
+            <p class="prices__desc p">
+              ✓ аренда студии оплачивается отдельно
+            </p>
+            <p class="prices__desc p">
+              ✓ помощь в подборе одежды
+            </p>
+            <p class="prices__desc p">
+              ✓ 5 фотографий в авторской ретуши;
+            </p>
+            <p class="prices__desc p">
+              ✓ весь отснятый материал в формате jpeg
+            </p>
+            <p class="prices__desc p">
+              ✓фотографии передаются через файлообменник
+            </p>
+            <p class="prices__desc prices__desc_last p">
+              ✓ срок передачи 3 недели
+            </p>
+            <strong>ЦЕНА : 15000 KZT</strong>
+            <p class="prices__desc prices__desc_snowflake p"></p>
+            <a href="#recording" class="prices__link link">
+              Заказать фотосессию
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="conditions">
+      <div class="container conditions__container">
+        <ul class="conditions__list">
+          <li class="conditions__item">
+            <h2 class="conditions__title h2">1.</h2>
+            <p class="conditions__desc p">
+              Вы согласны на использование фотографий с Вашим изображением, изображением Вашего малыша на моем сайте и в
+              группах соц. сетей.
+            </p>
+          </li>
+          <li class="conditions__item">
+            <h2 class="conditions__title h2">2.</h2>
+            <p class="conditions__desc p">
+              На макияж и прическу вы приезжаете заранее, подготовка происходит в специальной оборудованной гримерке
+              фотостудии 1 час.
+            </p>
+          </li>
+          <li class="conditions__item">
+            <h2 class="conditions__title h2">3.</h2>
+            <p class="conditions__desc p">
+              Выбор фотографий на ретушь Вы можете сделать сами (по желанию)
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="order">
+      <div class="container order__container">
+        <h2 class="order__title h2">Дополнительно можно заказать:</h2>
+        <table class="order__table">
+          <tbody class="order__tbody">
+            <tr>
+              <td>Ретушь фото</td>
+              <td>500 тг за фото</td>
+            </tr>
+            <tr>
+              <td>Печать фотографий</td>
+              <td>15*20, 20*30</td>
+            </tr>
+            <tr>
+              <td>Срочная обработка фото</td>
+              <td>в течение 1 недели 10 000 KZT</td>
+            </tr>
+            <tr>
+              <td class="order__vertical">Печать ФОТО КНИГИ</td>
+              <td class="order__vertical">
+                <p>✓ Формат 25*25</p>
+                <p>✓ 10 разворотов 25 000 KZT</p>
+                <p>✓ 15 разворотов 30 000 KZT</p>
+                <p>✓ Верстка и печать фото книги ориентировочно 2 недели</p>
+                <p class="order__desc">в стоимость фото книги входит - дизайн, верстка, печать.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="reviews__container">
+        <!-- Swiper -->
+        <div class="swiper reviews__swiper">
+          <div class="swiper-container reviews__slides-container">
+            <div class="swiper-wrapper reviews__wrapper">
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-1.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-2.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-3.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-4.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-1.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-2.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-3.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-4.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-1.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-2.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-3.png" alt="Картина">
+              </div>
+              <div class="swiper-slide reviews__slide">
+                <img class="reviews__image" src="./img/swiper-4.png" alt="Картина">
+              </div>
             </div>
           </div>
+          <!--swiper-container-->
         </div>
-      </section>
+        <button class="reviews__btn reviews__btn_next"></button>
+      </div>
+    </section>
+    <section class="recording" id="recording">
+      <div class="container recording__container">
+        <h2 class="recording__title h2">Для записи на фотосессию заполните следующие поля:</h2>
+        <!--Телефон-->
+        <div class="recording__form margin--right">
+          <form action="https://jsonplacexolder.typicode.com/post" method="POST" class="recording__form">
+            <div class="recording__block">
+              <div class="recording__form-input">
+                <!--data здесь он обрабатывает плагин валидатор кода-->
+                <input class="recording__input" type="text" name="Имя" placeholder="Имя*" data-validate-field="name"
+                  maxlength="10">
+              </div>
+              <div class="recording__form-input">
+                <input class="recording__input" type="tel" name="tel" placeholder="Телефон*" data-validate-field="tel"
+                  data-validate-rules="phone">
+              </div>
+              <div class="recording__form-input">
+                <input class="recording__input" type="text" placeholder="Пакет услуг">
+              </div>
+              <div class="recording__form-input">
+                <!--data здесь он обрабатывает плагин валидатор кода-->
+                <input class="recording__input" type="text" placeholder="Количество участников" maxlength="3">
+              </div>
+              <div class="recording__form-input">
+                <input class="recording__input" type="text" placeholder="Примерная дата" maxlength="50">
+              </div>
+              <div class="recording__form-input">
+                <input class="recording__input" type="text" placeholder="Ваш Instagram" data-validate-field="text"
+                  maxlength="50">
+              </div>
+            </div>
+            <div class="recording__form-input">
+              <input class="recording__input recording__input_margin" type="text" placeholder="Пожелания к съемке"
+                maxlength="1000">
+            </div>
+            <button class="recording__button link" type="submit" value="Заказать фотосессию">Заказать
+              фотосессию</button>
+          </form>
+        </div>
+        <div class="recording__order">
+          <div class="recording__foto"></div>
+          <div class="recording__foto-info">
+            <p class="recording__desc p">
+              Для записи на фотосессию напишите мне в
+            </p>
+            <a href="https://www.instagram.com/" class="recording__link">instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="container footer__container">
+      <div class="footer__info">
+        <p class="footer__desc-admin p">
+          Maria Tara
+        </p>
+        <p class="footer__desc">
+          Фотограф Усть-Каменогорск Казахстан
+        </p>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="portfolio" class="footer__link">Портфолио</a>
+        </li>
+        <li class="footer__item">
+          <a href="prices" class="footer__link">Условия и цены</a>
+        </li>
+        <li class="footer__item">
+          <a href="recording" class="footer__link">Запись на фотосессию</a>
+        </li>
+      </ul>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="vk.com" class="footer__link">VK</a>
+          </li>
+          <li class="footer__item">
+            <a href="instagram.com" class="footer__link">INSTAGRAM</a>
+          </li>
+          <li class="footer__item">
+            <a href="telegram.org" class="footer__link">TELEGRAM</a>
+          </li>
+        </ul>
+      </nav>
 
 
-    </main>
-    <footer>
+    </div>
+  </footer>
 
-    </footer>
+  <!--Мои-->
+  <script src="js/photographer.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!--Валидатор input-ов-->
+  <script src="js/just-validate.js"></script>
+  <!--Маска формы input-ов-->
+  <script src="js/inputmask.min.js"></script>
+  <!--Для отправки на емайл-->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!--Аккордеон в кодепене не работает, но он в других местах нужен для бургера-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
 
-    <!--Мои-->
-    <script src="js/photographer.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  </body>
 </html>
