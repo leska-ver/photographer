@@ -69,7 +69,7 @@ html {
 }
 
 body {
-  min-width: 320px;
+  min-width: 340px;
   font-family: 'Open Sans', sans-serif;
   /*Общий шрифт Open Sans Regular - 400*/
   font-weight: 400;
@@ -1097,6 +1097,10 @@ ul {
     background-position: center;
   }
 
+  .prices__img-3 {
+    background-position: -7px center;
+  }
+
   .prices__item:last-child .prices__img {
     background-position: 0 -112px;
   }
@@ -1178,6 +1182,10 @@ ul {
 }
 
 @media (max-width: 426px) {
+  .reviews__btn {
+    display: none;
+  }
+
   .footer__list {
     display: block;
   }
