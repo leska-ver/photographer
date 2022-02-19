@@ -869,6 +869,7 @@ ul {
   .portfolio__grid {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(5, 271px);
+    gap: 16px;
   }
 
   .portfolio__item:nth-child(4) {
@@ -968,6 +969,10 @@ ul {
     text-align: center;
   }
 
+  .prices__list {
+    gap: 15px;
+  }
+
   .recording__order {
     display: block;
   }
@@ -999,3 +1004,9 @@ ul {
     margin-right: 25px;
   }
 }  
+
+@media (max-width: 575px) {
+  .portfolio__grid {
+    gap: 10px;
+  }
+}
