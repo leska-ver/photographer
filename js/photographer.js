@@ -99,6 +99,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+  //Скрываем часть услуг .prices__item//
+  const list = document.getElementById('list-js');
+const moreButton = document.getElementById('prices__button-js');
+moreButton.addEventListener('click', function () {
+  list.classList.toggle('full');
+});
 
 
   //Маска телефона//
