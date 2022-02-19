@@ -143,7 +143,8 @@ moreButton.addEventListener('click', function () {
         required: 'Укажите ваш телефон'
       },
       name: 'Как вас зовут?',
-      mail: 'Укажите ваш e-mail'
+      mail: 'Укажите ваш e-mail',
+      text: 'Ваш Instagram'
     },
     colorWrong: '#FF5C00' //цвет сообщений валидации(ошибки фразы) и бордера
   });
