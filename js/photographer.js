@@ -128,7 +128,7 @@ moreButton.addEventListener('click', function () {
         required: true, //Это означает поле обязательное для заполнение
         function: (name, value) => {
           const phone = selector.inputmask.unmaskedvalue()
-          console.log(phone)
+          // console.log(phone)
           return Number(phone) && phone.length === 10
         }
       },

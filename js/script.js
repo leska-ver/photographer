@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   async function formSend(e) {//e-mail
     e.preventDefault();
 
-    let error = formValidate(form);//Ищет ошибки в емайл адресе
+    let error = 0;//Ищет ошибки в POST
 
     //Для отправки формы
     let formData = new FormData(form);
@@ -35,28 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // -//- Для отправки формы
   }
 
-  function formValidate(form) {
-    let error = 0;
-    let formReg = document.querySelectorAll('._reg');//Поле обязательного заполнения
-
-    for (let index = 0; index < formReg.length; index++) {
-      const input = formReg[index];
-      formRemoveError(input);
-
-      if (input.classList.contains('_email')) {//Ставим в само поле емайл адреса(.form__input) Всем инпутам .form__input._error css Цвет ошибки
-        if (emailTest(input)) {
-          formAddError(input);
-          error++;
-        }
-      } else {
-        if (input.value === '') {
-          formAddError(input);
-          error++;
-        }
-      }
-    }
-    return error;
-  }
   //Вспомогательные функции
   function formAddError(input) {//Добавляет
     input.parentElement.classList.add('_error');
@@ -66,17 +44,5 @@ document.addEventListener('DOMContentLoaded', function () {
     input.parentElement.classList.remove('_error');
     input.classList.remove('_error');
   }
-  //Функция теста email, проверяем правильность написания емайл адреса
-  function emailTest(input) {
-    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\]w+)*(\.\w{2,8})+$/.test(input.value);
-  }
-
-  //Покажет пользователю его картинку которую он отправляет
-    var reader = new FileReader();
-    reader.onload = function (e) {
-      formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
-    };
-    reader.onerror = function (e) {
-      alert('Ошибка');
-    };
+  
 });
