@@ -28,17 +28,17 @@ if(trim(!empty($_POST['name']))){
 if(trim(!empty($_POST['tel']))){
   $body.='<p><strong>Телефон*:</strong> '.$_POST['tel'].'</p>';
 }
-if(trim(!empty($_POST['comment']))){
-  $body.='<p><strong>Пакет услуг:</strong> '.$_POST['comment'].'</p>';
+if(trim(!empty($_POST['comment-paket']))){
+  $body.='<p><strong>Пакет услуг:</strong> '.$_POST['comment-paket'].'</p>';
 }
-if(trim(!empty($_POST['comment']))){
-  $body.='<p><strong>Количество участников:</strong> '.$_POST['comment'].'</p>';
+if(trim(!empty($_POST['comment-kol']))){
+  $body.='<p><strong>Количество участников:</strong> '.$_POST['comment-kol'].'</p>';
 }
-if(trim(!empty($_POST['comment']))){
-  $body.='<p><strong>Примерная дата:</strong> '.$_POST['comment'].'</p>';
+if(trim(!empty($_POST['comment-data']))){
+  $body.='<p><strong>Примерная дата:</strong> '.$_POST['comment-data'].'</p>';
 }
-if(trim(!empty($_POST['comment']))){
-  $body.='<p><strong>Ваш Instagram:</strong> '.$_POST['comment'].'</p>';
+if(trim(!empty($_POST['comment-insta']))){
+  $body.='<p><strong>Ваш Instagram:</strong> '.$_POST['comment-insta'].'</p>';
 }
 
   $mail->Body = $body;
