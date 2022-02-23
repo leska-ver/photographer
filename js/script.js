@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   async function formSend(e) {//e-mail
     e.preventDefault();
 
-    let error = 0;//Ищет ошибки в POST
+    let error = 0;//Ищет ошибки в инпутах
 
     //Для отправки формы
     let formData = new FormData(form);
