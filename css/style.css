@@ -707,6 +707,7 @@ ul {
     padding: 10px 2px 5px;
     border: none;
     border-bottom: 1px solid #000;
+    width: 100%;
 }
 
 .recording__input:focus {
@@ -715,24 +716,14 @@ ul {
 
 
 /***Стилазация фразы ошибки***/
-
-/* .recording__form-input { */
-    /*Чтобы ошибка не прыгала ставим ей(.js-validate-error-label) position: absolute;*/
-    /* position: relative; 
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.js-validate-error-label {*/
-    /*Чтобы ошибка не прыгала ставим её отцу(.recording__form-input) position: relative;*/
-    /* position: absolute;
-    top: -8px;
-    padding: 1px 1px 1px 2px;
-    font-size: 12px;
-} */
-
 .recording__label {
   position: relative;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  right: 5px;
+  top: -7px;
 }
 
 /***Конец стилазация фразы ошибки***/
