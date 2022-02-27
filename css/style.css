@@ -722,8 +722,8 @@ ul {
 
 .js-validate-error-label {
   position: absolute;
-  right: 5px;
   top: -7px;
+  left: 3px;  
 }
 
 /***Конец стилазация фразы ошибки***/
