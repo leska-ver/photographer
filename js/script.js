@@ -1,48 +1,62 @@
-"use strict"
-
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('form');
-  form.addEventListener('submit', formSend);//Теперь за нажатие кнопки отвечает js
 
-  async function formSend(e) {//e-mail
-    e.preventDefault();
+// inputmask
+const form = document.querySelector('.form');
+const telSelector = form.querySelector('input[type="tel"]');
+const inputMask = new Inputmask('+7 (999) 999-99-99');
+inputMask.mask(telSelector);
 
-    let error = 0;//Ищет ошибки в инпутах
-
-    //Для отправки формы
-    let formData = new FormData(form);
-    // formData.append('image', formImage.files[0]);
-
-    if (error === 0) {
-      form.classList.add('_sending');//Оповести пользователя что ошибок нет
-      let response = await fetch('sendmail.php', {
-        method: 'POST',
-        body: formData
-      });
-      if (response.ok) {
-        let result = await response.json();
-        alert(result.message);
-        formPreview.innerHTML = '';
-        form.reset();   
-        form.classList.remove('_sending');     
-      } else {
-          alert("Ошибка");
-          form.classList.remove('_sending');
-      }      
-    } else {
-      alert('Заполните обязательные поля')
+new window.JustValidate('.form', {
+  rules: {
+    tel: {
+      required: true,
+      function: () => {
+        const phone = telSelector.inputmask.unmaskedvalue();
+        return Number(phone) && phone.length === 10;
+      }
     }
-    // -//- Для отправки формы
-  }
+  },
+  colorWrong: '#ff0f0f',
+  messages: {
+    name: {
+      required: 'Введите имя',
+      minLength: 'Введите 3 и более символов',
+      maxLength: 'Запрещено вводить более 15 символов'
+    },
+    // email: {
+    //   email: 'Введите корректный email',
+    //   required: 'Введите email'
+    // },
+    tel: {
+      required: 'Введите телефон',
+      function: 'Здесь должно быть 10 символов без +7'
+    },
+    text: {
+      required: 'Введите Instagram',
+      minLength: 'Введите 15 и более символов',
+      maxLength: 'Запрещено вводить более 25 символов'
+    }
+  },
+  submitHandler: function(thisForm) {
+    let formData = new FormData(thisForm);
 
-  //Вспомогательные функции
-  function formAddError(input) {//Добавляет
-    input.parentElement.classList.add('_error');
-    input.classList.add('_error');
+    let xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          console.log('Отправлено');
+        }
+      }
+    }
+
+    xhr.open('POST', 'mail.php', true);
+    xhr.send(formData);
+
+    thisForm.reset();
   }
-  function formRemoveError(input) {//Удаляет
-    input.parentElement.classList.remove('_error');
-    input.classList.remove('_error');
-  }
-  
+})
+
 });
+
+

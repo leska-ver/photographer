@@ -23,43 +23,49 @@
 </head>
 
 <body>
-  <h1 class="visually-hidden">Услуги фотографа</h1>
-  <!--Неведимка для прохождения Валидатора, h1 должен быть один-->
+  <!--<h1 class="visually-hidden">Услуги фотографа</h1>
+  Неведимка для прохождения Валидатора, h1 должен быть один. Ставит когда у header не будет заголовка(h1)-->
   <header class="header">
     <div class="container header__container">
-      <button id="burger" class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="header__nav menu" id="menu">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="#about" class="header__link" aria-label="обо мне">обо мне</a>
-          </li>
-          <li class="header__item">
-            <a href="#portfolio" class="header__link" aria-label="portfolio">портфолио</a>
-          </li>
-          <li class="header__item">
-            <a href="#prices" class="header__link" aria-label="условия и цены">условия и цены</a>
-          </li>
-          <li class="header__item">
-            <a href="#recording" class="header__link" aria-label="запись на фотосессию">запись на фотосессию</a>
-          </li>
-          <li class="header__item">
-            <a href="#reviews" class="header__link" aria-label="отзывы">отзывы</a>
-          </li>
-          <li class="header__item">
-            <a href="#footer" class="header__link" aria-label="контакты">контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <h1 class="header__title h1">MARIA TARA</h1>
+      <div class="header__fixed-828px">
+        <!--Для fixed на бургер состояние не влияет-->
+        <button id="burger" class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__nav menu" id="menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#about" class="header__link" aria-label="обо мне">обо мне</a>
+            </li>
+            <li class="header__item">
+              <a href="#portfolio" class="header__link" aria-label="portfolio">портфолио</a>
+            </li>
+            <li class="header__item">
+              <a href="#prices" class="header__link" aria-label="условия и цены">условия и цены</a>
+            </li>
+            <li class="header__item">
+              <a href="#recording" class="header__link header__link--active" aria-label="запись на фотосессию">запись на
+                фотосессию</a>
+            </li>
+            <li class="header__item">
+              <a href="#reviews" class="header__link" aria-label="отзывы">отзывы</a>
+            </li>
+            <li class="header__item">
+              <a href="#footer" class="header__link" aria-label="контакты">контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
   </header>
   <main>
     <section class="hero">
       <div class="container hero__container">
-        <img class="hero__logo" src="img/DjafsiaMariaTara.png" alt="Djafsia Maria Tara">
+        <!-- <img class="hero__logo" src="img/DjafsiaMariaTara.png" alt="Djafsia Maria Tara"> -->
         <img class="hero__foto" src="img/hero-Maria.png" alt="Фотограф Мария">
       </div>
     </section>
@@ -68,11 +74,14 @@
         <h2 class="slash h2">обо мне</h2>
         <div class="about__flex">
           <img class="about__img" src="img/about-foto.jpg" alt="Фотограф Мария">
-          <div class="about__info">          
+          <div class="about__info">
             <p class="about__desc-hi">Привет друзья!</p>
             <p class="about__desc-text p">
               Рада видеть Вас на своей творческой страничке. Меня зовут Мария Джафсия Тара и я фотограф. Фотографией
-              занимаюсь с 2019 года, для меня создание фотографии это творчество, я наслаждаюсь этим процессом от и до! По образованию я ветеринарный врач, но в творческой атмосфере я живу с детства, по этому выбор в сторону фотографии был неизбежен! Я обожаю свою работу и то фантастически красивое и стильное направление в котором я работаю!
+              занимаюсь с 2019 года, для меня создание фотографии это творчество, я наслаждаюсь этим процессом от и до!
+              По образованию я ветеринарный врач, но в творческой
+              атмосфере я живу с детства, по этому выбор в сторону фотографии был неизбежен! Я обожаю свою работу и то
+              фантастически красивое и стильное направление в котором я работаю!
             </p>
             <p class="about__desc-invitation p text-transform">
               Если вы хотите живую и атмосферную фотосессию, то вам ко мне!!!
@@ -82,7 +91,7 @@
             </a>
           </div>
         </div>
-        
+
       </div>
     </section>
     <section class="portfolio" id="portfolio">
@@ -90,56 +99,56 @@
         <div class="container">
           <h2 class="slash h2">Портфолио</h2>
         </div>
-          <ul class="portfolio__grid">
-            <li class="portfolio__item portfolio__item_big">
-              <img src="img/portfolio-1.jpg" alt="fhoto-1" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-2.jpg" alt="fhoto-2" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_big">
-              <img src="img/portfolio-3.jpg" alt="fhoto-3" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-4.jpg" alt="fhoto-4" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_big">
-              <img src="img/portfolio-5.jpg" alt="fhoto-5" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_big">
-              <img src="img/portfolio-6.jpg" alt="fhoto-6" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-7.jpg" alt="fhoto-7" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-8.jpg" alt="fhoto-8" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-9.jpg" alt="fhoto-9" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-10.jpg" alt="fhoto-10" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-11.jpg" alt="fhoto-11" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-12.jpg" alt="fhoto-12" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-13.jpg" alt="fhoto-13" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-14.jpg" alt="fhoto-14" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-15.jpg" alt="fhoto-15" class="portfolio__foto">
-            </li>
-            <li class="portfolio__item portfolio__item_small">
-              <img src="img/portfolio-16.jpg" alt="fhoto-16" class="portfolio__foto">
-            </li>
-          </ul>
+        <ul class="portfolio__grid">
+          <li class="portfolio__item portfolio__item_big">
+            <img src="img/portfolio-1.jpg" alt="fhoto-1" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-2.jpg" alt="fhoto-2" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_big">
+            <img src="img/portfolio-3.jpg" alt="fhoto-3" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-4.jpg" alt="fhoto-4" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_big">
+            <img src="img/portfolio-5.jpg" alt="fhoto-5" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_big">
+            <img src="img/portfolio-6.jpg" alt="fhoto-6" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-7.jpg" alt="fhoto-7" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-8.jpg" alt="fhoto-8" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-9.jpg" alt="fhoto-9" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-10.jpg" alt="fhoto-10" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-11.jpg" alt="fhoto-11" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-12.jpg" alt="fhoto-12" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-13.jpg" alt="fhoto-13" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-14.jpg" alt="fhoto-14" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-15.jpg" alt="fhoto-15" class="portfolio__foto">
+          </li>
+          <li class="portfolio__item portfolio__item_small">
+            <img src="img/portfolio-16.jpg" alt="fhoto-16" class="portfolio__foto">
+          </li>
+        </ul>
       </div>
     </section>
     <section class="prices" id="prices">
@@ -149,7 +158,8 @@
           <li class="prices__item">
             <div class="prices__img prices__img-1"></div>
             <div class="prices__block">
-              <div><!--Блок для выравнивание текста-->
+              <div>
+                <!--Блок для выравнивание текста-->
                 <h3 class="prices__h3 h3">
                   2 х часовой пакет семейный <strong class="prices__strong-h3">Family Premium</strong>
                 </h3>
@@ -187,20 +197,23 @@
                 <p class="prices__desc prices__desc_snowflake prices__desc_snowflake_1 p">
                   Пакет подходит семейным парам где детям до 12 мес или 3+
                 </p>
-              </div><!-- // Блок для выравнивание текста-->
+              </div>
+              <!-- // Блок для выравнивание текста-->
               <div class="prices__width">
                 <a href="#recording" class="prices__link link">
                   Заказать фотосессию
                 </a>
               </div>
-            </div><!--Выравнивание-->
+            </div>
+            <!--Выравнивание-->
           </li>
           <li class="prices__item">
             <div class="prices__img prices__img-2"></div>
             <div class="prices__block">
-              <div><!--Блок для выравнивание текста-->
+              <div>
+                <!--Блок для выравнивание текста-->
                 <h3 class="prices__h3 h3">
-                    Семейный пакет <strong class="prices__strong-h3">Family</strong>
+                  Семейный пакет <strong class="prices__strong-h3">Family</strong>
                 </h3>
                 <p class="prices__desc p">
                   ✓ организация съёмки , вам нужно только выбрать удобный день и записаться
@@ -236,18 +249,21 @@
                 <p class="prices__desc prices__desc_snowflake prices__desc_snowflake_2 p">
                   Пакет подходит семейный парам в ожидании малыша! Мама+папа, одна мама, возможно участие детей
                 </p>
-              </div><!-- // Блок для выравнивание текста-->
-              <div class="prices__width">  
+              </div>
+              <!-- // Блок для выравнивание текста-->
+              <div class="prices__width">
                 <a href="#recording" class="prices__link link">
                   Заказать фотосессию
                 </a>
               </div>
-            </div><!--Выравнивание-->    
+            </div>
+            <!--Выравнивание-->
           </li>
           <li class="prices__item">
             <div class="prices__img prices__img-3"></div>
             <div class="prices__block">
-              <div><!--Блок для выравнивание текста-->
+              <div>
+                <!--Блок для выравнивание текста-->
                 <h3 class="prices__h3 h3">
                   Пакет для девушек <strong class="prices__strong-h3">Woman</strong>
                 </h3>
@@ -282,18 +298,21 @@
                 <p class="prices__desc prices__desc_snowflake prices__desc_snowflake_3 p">
                   Пакет подходит женщинам
                 </p>
-              </div><!-- // Блок для выравнивание текста-->
-              <div class="prices__width">   
+              </div>
+              <!-- // Блок для выравнивание текста-->
+              <div class="prices__width">
                 <a href="#recording" class="prices__link link">
                   Заказать фотосессию
                 </a>
               </div>
-            </div><!--Выравнивание-->    
+            </div>
+            <!--Выравнивание-->
           </li>
           <li class="prices__item">
             <div class="prices__img prices__img-4"></div>
             <div class="prices__block">
-              <div><!--Блок для выравнивание текста-->
+              <div>
+                <!--Блок для выравнивание текста-->
                 <div class="prices__flex">
                   <h3 class="prices__h3 h3">
                     Пакет мини <strong class="prices__strong-h3">Express</strong>
@@ -328,13 +347,15 @@
                 </p>
                 <strong>ЦЕНА : 15000 KZT</strong>
                 <p class="prices__desc prices__desc_snowflake p"></p>
-              </div><!-- // Блок для выравнивание текста-->
-              <div class="prices__width">   
+              </div>
+              <!-- // Блок для выравнивание текста-->
+              <div class="prices__width">
                 <a href="#recording" class="prices__link link">
                   Заказать фотосессию
                 </a>
               </div>
-            </div><!--Выравнивание-->    
+            </div>
+            <!--Выравнивание-->
           </li>
         </ul>
         <button class="prices__button" id="prices__button-js">Ещё...</button>
@@ -451,42 +472,48 @@
         <h2 class="recording__title h2">Для записи на фотосессию заполните следующие поля:</h2>
         <!--Телефон-->
         <div class="recording__form margin--right">
-          <form action="#" class="recording__form" id="form">
+          <form action="mail.php" enctype="multipart/form-data" class="recording__form form" method="POST">
+            <input type="hidden" name="admin_email[]" value="lyaisan.333@yandex.ru">
+            <input type="hidden" name="form_subject" value="Тема письма">
             <div class="recording__block">
-              <div class="recording__form-input">
                 <!--data здесь он обрабатывает плагин валидатор кода-->
-                <label for="formName"></label>
-                <input class="recording__input _reg" id="formName" type="text" name="name" placeholder="Имя*" data-validate-field="name"
-                  maxlength="10">
-              </div>
-              <div class="recording__form-input">
-                <label for="formTel"></label>
-                <input class="recording__input _reg" id="formTel" type="tel" name="tel" placeholder="Телефон*" data-validate-field="tel"
-                  data-validate-rules="phone">
-              </div>
-              <div class="recording__form-input">
-                <label for="formPackage"></label>
-                <input class="recording__input" id="formPackage" type="text" name="comment-paket" placeholder="Пакет услуг">
-              </div>
-              <div class="recording__form-input">
-                <label for="formKol"></label>
-                <input class="recording__input" id="formKol" type="text" name="comment-kol" placeholder="Количество участников" maxlength="3">
-              </div>
-              <div class="recording__form-input">
-                <label for="formData"></label>
-                <input class="recording__input" id="formData" type="text" name="comment-data" placeholder="Примерная дата" maxlength="50">
-              </div>
-              <div class="recording__form-input">
-                <label for="formInstagram"></label>
-                <input class="recording__input _reg _insta-js" id="formInstagram" type="text" name="comment-insta" placeholder="Ваш Instagram" data-validate-field="text"
-                  maxlength="50">
-              </div>
+                <label class="recording__label">
+                  <input class="recording__input" type="text" name="name" placeholder="Имя*" data-validate-field="name"
+                    maxlength="10">
+                </label>
+                <label class="recording__label">
+                  <input class="recording__input" type="tel" name="tel" placeholder="Телефон*" data-validate-field="tel"
+                    data-validate-rules="phone">
+                </label>
+                <label class="recording__label">
+                  <input class="recording__input" type="text" name="paket" placeholder="Пакет услуг">
+                </label>
+                <label class="recording__label">
+                  <input class="recording__input" type="text" name="kol" placeholder="Количество участников"
+                    maxlength="3">
+                </label>
+                <label class="recording__label">
+                  <input class="recording__input" type="text" name="data" placeholder="Примерная дата" maxlength="50">
+                </label>
+                <label class="recording__label">
+                  <input class="recording__input" type="text" name="insta" placeholder="Ваш Instagram"
+                    data-validate-field="text" maxlength="50">
+                </label>
             </div>
             <div class="recording__form-input">
-              <label for="formMessage"></label>
-              <input class="recording__input recording__input_margin _reg" id="formMessage" type="text" name="message" placeholder="Пожелания к съемке"
-                maxlength="1000">
+              <label class="recording__label">
+                <input class="recording__input recording__input_margin" type="text" name="message"
+                  placeholder="Пожелания к съемке" maxlength="1000">
+              </label>
             </div>
+            <!-- <div class="recording__form-item">
+                            <div class="recording__checkbox">
+                                <input checked="" type="checkbox" name="agreement" class="recording__checkbox-input">
+                                <label for="form-label" class="recording__checkbox-label">
+                  <span>Я даю своё согласие на обработку персональных данных в соответствии с <a href="http://127.0.0.1:5500/privacy-policy.html" target="_blank">Условиями</a>*</span>
+                </label>
+                            </div>
+                        </div> -->
             <button class="recording__button link" type="submit" value="Заказать фотосессию">Заказать
               фотосессию</button>
           </form>
@@ -545,20 +572,25 @@
     </div>
   </footer>
 
-  <!--Мои-->
-  <script src="js/script.js"></script>
-  <script src="js/photographer.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!--Валидатор input-ов-->
-  <script src="js/just-validate.js"></script>
-  <!--Маска формы input-ов-->
-  <script src="js/inputmask.min.js"></script>
-  <!--Для отправки на емайл-->
+
+  <!--Для отправки на емайл. jquery-они должны быть выше всех -->
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
   <!--Аккордеон в кодепене не работает, но он в других местах нужен для бургера-->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!--Маска формы input-ов-->
+  <script src="js/inputmask.min.js"></script>
+  <!--Валидатор input-ов-->
+  <script src="js/just-validate.min.js"></script>
+
+
+  <!--Мои-->
+  <script src="js/script.js"></script>
+  <script src="js/photographer.js"></script>
+
 </body>
 
 </html>
