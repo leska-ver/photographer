@@ -793,9 +793,6 @@ ul {
     color: darkmagenta;
 }
 
-
-
-
 .recording__checkbox-link {
   border: 1px solid transparent;
   color: #7a956b;  
@@ -874,15 +871,7 @@ ul {
 
 .modalGo--visible:focus {
   /*Для Таба, открывать модальное окно. Не трогать!!!*/
-  outline: 1px solid pink;}
-
-.disable-scroll {
-  position: fixed;
-  top: 0; 
-  left: 0;   
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  outline: 1px solid pink;
 }
 
 .modalGo:target {
