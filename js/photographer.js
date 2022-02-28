@@ -123,7 +123,71 @@ moreButton.addEventListener('click', function () {
     })
   })
 
+
+
+
+  // console.log(); находит в js-ce ошибку. Deftools
+ // Модальное окно//
+    const btns = document.querySelectorAll('.modalGo__link-js');
+    const modalOverlay = document.querySelector('.modalGo-overlay ');
+    const modals = document.querySelectorAll('.modalGo');
+
+    btns.forEach((el) => {
+      el.addEventListener('click', (e) => {
+        let path = e.currentTarget.getAttribute('data-path');
+        const currentModal = document.querySelector(`[data-target="${path}"]`);
+        const closeBtn = currentModal.querySelector('.modalGo__js-close');
+
+        
+        modals.forEach((el) => {
+          el.classList.remove('modalGo--visible');
+        });
+      
+        currentModal.classList.add('modalGo--visible');
+        modalOverlay.classList.add('modalGo-overlay--visible');
+
+        //Для modal__js-close 
+        closeBtn.focus(); 
+      });
+    });
+
+    // Реакция нажима в любом месте(выключатель окна) не удалять
+    modalOverlay.addEventListener('click', (e) => {
+      console.log(e.target);
+      
+      if (e.target == modalOverlay) {
+        modalOverlay.classList.remove('modalGo-overlay--visible');
+        modals.forEach((el) => {
+          el.classList.remove('modalGo--visible');
+        });
+      }
+    });
+
+    //Реакция нажима на Х(выключатель окна)
+    modals.forEach((el) => {
+      const closeBtn = el.querySelector('.modalGo__js-close');
+
+      closeBtn.addEventListener('click', function () {
+        modalOverlay.classList.remove('modalGo-overlay--visible');
+        modals.forEach((el) => {
+          el.classList.remove('modalGo--visible');
+        });
+      });
+    });
   
+
+    
+  /*Модальное окно для Регистрации*/
+    document.querySelector("#registration").onclick = function(){
+  alert("Вы нажали на Регистрацию");
+}
+
+
+
+
+
+
+
 
   // Плавный скролл по якорям. В любое место можно кинуть.
   $(function () {

@@ -131,7 +131,7 @@ ul {
 }
 
 .h1 {
-    /*privacy-policy__title*/
+    /*modalGo__title*/
     font-size: 36px;
     line-height: 1.23;
 }
@@ -624,8 +624,6 @@ ul {
     position: relative;
     padding: 0;
 }
-
-
 /*** // reviews-1616px***/
 
 
@@ -646,38 +644,12 @@ ul {
 /*---Телефон валидация и маска---*/
 
 .recording__form {
-    /*position: relative;
-    Для оповещения что форма удачно отравилась js _sending*/
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
     font-size: 16px;
     line-height: 18px;
 }
-
-
-/*Для оповещения что форма удачно отравяется js _sending
-
-.recording__form::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(51, 51, 51, 0.9) url("../img/loading.gif") center / 50px no-repeat;
-    opacity: 1;
-    visibility: hidden;
-    transition: all .5s ease 0s;
-}
-
-.recording__form._sending::after {
-    opacity: 1;
-    visibility: visible;
-}*/
-
-
-/* // Для оповещения что форма удачно отравяется js _sending*/
 
 .recording__block {
     display: grid;
@@ -716,7 +688,7 @@ ul {
 
 
 /***Стилазация фразы ошибки***/
-.recording__label {
+.recording__label {/*общий*/
   position: relative;
 }
 
@@ -725,7 +697,6 @@ ul {
   top: -7px;
   left: 3px;  
 }
-
 /***Конец стилазация фразы ошибки***/
 
 .recording__input_margin {
@@ -736,66 +707,44 @@ ul {
     margin: 0 0 20px 0;
 }
 
-
-/*checkbox*/
-
-/* .recording__checkbox._error .recording__checkbox-label::before { */
-    /*Цвет ошибки script.js*/
-    /* box-shadow: 0 0 15px red;
-}
-
+/***checkbox***/
 .recording__checkbox-input {
-    display: none;
+  display: none;
 }
-
-.recording__checkbox-input:checked+.recording__checkbox-label::after {
-    transform: scale(1); */
-    /*Открыли галку*/
-/* }
-
+.recording__checkbox-input:checked + .recording__checkbox-label::after {
+  transform: scale(1);/*Открыли галку*/
+}
 .recording__checkbox-label {
-    position: relative;
-    font-size: 14px;
-    line-height: 20px;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  line-height: 140%;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
 }
-
 .recording__checkbox-label::before {
-    content: "";
-    align-self: flex-start;
-    flex: 0 0 20px;
-    margin: 0 10px 0 0;
-    border: 1px solid var(--color-codGray);
-    border-radius: 4px;
-    height: 20px;
-    background-color: transparent;
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 24px;
+  margin: 0 10px 0 0;
+  border: 1px solid var(--color-codGray);
+  border-radius: 4px;
+  height: 24px;
+  background-color: transparent;  
 }
-
 .recording__checkbox-label::after {
-    content: "\2713";
-    position: absolute;
-    top: 0;
-    left: 4px;
-    border: 1px solid transparent;
-    width: 14px;
-    height: 14px;
-    color: red;
-    transform: scale(0); */
-    /*Скрыли галку*/
-    /* transition: transform .4s ease 0s;
+  content: "\2713";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 16px;
+  height: 16px; 
+  color: red;
+  transform: scale(0);/*Скрыли галку*/
+  transition: transform .5s ease 0s;
 }
-
-.recording__checkbox-label a {
-    color: #7a956b;
-}
-
-.recording__checkbox-label a:focus {
-    border-bottom: 1px solid #7a956b;
-    outline: none;
-} */
-/* // checkbox*/
+/*** // checkbox ***/
 
 .recording__button {
     padding: 12px 38px;
@@ -844,24 +793,182 @@ ul {
     color: darkmagenta;
 }
 
-/*** // recording-1616px***/
 
 
-/***Политика конфиденциальности privacy-policy-1616px***/
 
-.privacy-policy__container {
-    margin: 0 auto;
-    max-width: 862px;
+.recording__checkbox-link {
+  border: 1px solid transparent;
+  color: #7a956b;  
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: color .4s ease-in-out, border .4s ease-in-out;
+  -moz-transition: color .4s ease-in-out, border .4s ease-in-out;
+  -o-transition: color .4s ease-in-out, border .4s ease-in-out;
+  transition: color .4s ease-in-out, border .4s ease-in-out;
 }
 
-.privacy-policy__title {
+.recording__checkbox-link:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #7a956b;
+}
+
+.recording__checkbox-link:hover {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.recording__checkbox-link:active {
+  border-bottom: 1px solid #364e29;
+  color: #364e29;
+}
+/*** // recording-1616px***/
+
+/***Политика конфиденциальности modal-policy-1616px***/
+/**-modal-**/
+.modalGo-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: rgb(6 6 6 / 71%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99999;
+  transition: all 0.3s ease-in-out;
+}
+
+.modalGo {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 750px; 
+  overflow-x: hidden; 
+  overflow-x: auto;   
+}
+
+.modalGo-overlay--visible {
+  /*Mak*/
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.modalGo--visible {
+  /*Mak*/
+  display: block;
+  /*Для скролла*/
+  width: 700px;
+  height: 510px;
+  overflow-x: hidden;
+  overflow-x: auto;
+  text-align: justify;
+  /* // Для скролла*/
+}
+
+.modalGo--visible:focus {
+  /*Для Таба, открывать модальное окно. Не трогать!!!*/
+  outline: 1px solid pink;}
+
+.disable-scroll {
+  /*Mak*/
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.modalGo:target {
+  display: block;
+  pointer-events: auto;
+}
+
+.modalGo__js-close {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  border: 2px solid transparent;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  transition: background-color .4s ease-in-out, border .4s ease-in-out;
+  cursor: pointer; 
+}
+
+.modalGo__js-close:focus {
+  outline: none;
+  border: 2px solid var(--color-gray);
+}
+
+.modalGo__js-close::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 3px;
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-black);
+  transform: rotate(45deg);
+  transition: background-color .4s ease-in-out;
+}
+
+.modalGo__js-close::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  width: 2px;
+  height: 20px;
+  background-color: var(--color-black);
+  transform: rotate(45deg);
+  transition: background-color .4s ease-in-out;
+}
+
+.modalGo__js-close:focus::before, .modalGo__js-close:focus::after {
+  border: 1px solid var(--color-mineShaft); 
+}
+
+.modalGo__js-close:hover::before, .modalGo__js-close:hover::after {
+  background-color: var(--color-tussock);
+}
+
+.modalGo__js-close:active::before, .modalGo__js-close:active::after {
+  background-color: yellowgreen;
+}
+
+.modalGo__container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: inherit;
+}
+
+.modalGo__info {  
+  position: relative;
+  padding: 30px;
+  width: 100%;
+}
+/**Конец modal**/
+
+.modalGo__title {
     margin-bottom: 35px;
     font-family: 'Roboto', Arial, sans-serif;
     color: rgb(56, 56, 56);
     text-align: center;
 }
 
-.privacy-policy__desc {
+.modalGo__desc {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 300;
     font-size: 14px;
@@ -869,7 +976,7 @@ ul {
     color: rgb(56, 56, 56);
 }
 
-.privacy-policy__list {
+.modalGo__list {
     margin-top: 0;
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 300;
@@ -878,7 +985,7 @@ ul {
     color: rgb(56, 56, 56);
 }
 
-.privacy-policy__subList li:before {
+.modalGo__subList li:before {
     content: "-";
 }
 
@@ -886,7 +993,7 @@ ul {
     padding-bottom: 15px;
 }
 
-.privacy-policy__enter {
+.modalGo__enter {
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 300;
@@ -894,13 +1001,9 @@ ul {
     line-height: 18px;
     color: rgb(56, 56, 56);
 }
-
-
-/***Политика конфиденциальности privacy-policy-1616px***/
-
+/*** // Политика конфиденциальности modal-1616px***/
 
 /***footer-1616px***/
-
 .footer {
     padding: 62px 0 104px;
     background-color: var(--color-gray);
@@ -914,7 +1017,7 @@ ul {
 .footer__desc-admin {
     font-size: 24px;
     line-height: 26px;
-    color: var(--color-white);
+    color: 30px;
 }
 
 .footer__desc {
@@ -930,7 +1033,7 @@ ul {
 .footer__link {
     font-size: 14px;
     line-height: 19px;
-    color: var(--color-white);
+    color: 30px;
     -webkit-transition: border-bottom .4s ease-in-out, opacity .4s ease-in-out;
     -moz-transition: border-bottom .4s ease-in-out, opacity .4s ease-in-out;
     -o-transition: border-bottom .4s ease-in-out, opacity .4s ease-in-out;
@@ -1169,7 +1272,7 @@ ul {
     .burger:active span,
     .burger:active span:nth-child(2),
     .burger:active span:nth-child(3) {
-        background-color: var(--color-white);
+        background-color: 30px;
     }
     /*Крест*/
     .burger.open span:nth-child(1) {
@@ -1287,6 +1390,10 @@ ul {
 }
 
 @media (max-width: 575px) {
+    .header {
+      padding-bottom: 20px;
+    }
+
     .header__title {
         display: none;
     }
@@ -1295,7 +1402,7 @@ ul {
     }
     .burger {
         position: relative;
-        top: 0;
+        top: 20px;
     }
     .hero__logo {
         margin: 0 0 25px 0;
@@ -1442,6 +1549,10 @@ ul {
         background-size: cover;
         background-position: center -35px;
     }
+
+    .recording__input {
+      padding-top: 5px;
+    }  
 }
 
 @media (max-width: 426px) {
@@ -1488,7 +1599,7 @@ ul {
     }
     .footer__icon_426:focus {
         outline: none;
-        border: 1px solid var(--color-white);
+        border: 1px solid 30px;
     }
     .footer__icon_426:hover {
         opacity: .6;
