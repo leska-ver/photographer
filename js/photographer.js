@@ -174,19 +174,12 @@ moreButton.addEventListener('click', function () {
         });
       });
     });
-  
-
-    
-  /*Модальное окно для Регистрации*/
-    document.querySelector("#registration").onclick = function(){
-  alert("Вы нажали на Регистрацию");
-}
-
-
-
-
-
-
+      
+    /*Модальное окно для Регистрации*/
+      document.querySelector("#registration").onclick = function(){
+    alert("Вы нажали на Регистрацию");
+    }
+  // -- Модальное окно -- //
 
 
   // Плавный скролл по якорям. В любое место можно кинуть.
