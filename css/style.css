@@ -1300,10 +1300,6 @@ ul {
 }
 
 @media (max-width: 707px) {
-  .hero {
-    padding-top: 40px;
-  }
-
   .about__info {
     padding-top: 0;
   }
