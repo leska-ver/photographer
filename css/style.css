@@ -418,7 +418,7 @@ ul {
 }
 
 .prices__img-2 {
-    background-image: url("../img/prices-2.jpg");
+    background-image: url("../img/prices-2-1220.jpg");
 }
 
 .prices__img-3 {
@@ -426,7 +426,7 @@ ul {
 }
 
 .prices__img-4 {
-    background-image: url("../img/prices-4.jpg");
+    background-image: url("../img/prices-4-1220.jpg");
 }
 
 .prices__h3 {
@@ -750,31 +750,9 @@ ul {
     padding: 12px 38px;
 }
 
-.recording__desc {
-    line-height: 24px;
-    text-align: center;
-}
-
 .recording__order {
     display: flex;
     width: 844px;
-}
-
-.recording__foto {
-    margin-right: 120px;
-    width: 438px;
-    height: 600px;
-    background-image: url("../img/recording-foto.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.recording__foto-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 95px;
 }
 
 .recording__link {
@@ -1124,9 +1102,11 @@ ul {
         background-position: center -63px;
         background-size: cover;
     }
-    .prices__item:last-child .prices__img {
-        background-position: 0;
+
+    .prices__img-2, .prices__img-4 {
+      background-position: center 0;
     }
+    
     .prices__width {
         bottom: 70px;
     }
@@ -1140,18 +1120,7 @@ ul {
         width: 31px;
         height: 1px;
     }
-    .recording__order {
-        width: 100%;
-        justify-content: center;
-    }
-    .recording__foto {
-        margin-right: 40px;
-        width: 50%;
-        height: 500px;
-    }
-    .recording__foto-info {
-        padding-top: 75px;
-    }
+   
     .recording__input_margin {
         margin-bottom: 50px;
     }
@@ -1167,6 +1136,10 @@ ul {
     .header__container {
         position: relative;
         width: 99%;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        background-color: var(--color-concrete);
     }
     .header__fixed-828px {
         position: fixed;
@@ -1344,17 +1317,6 @@ ul {
         line-height: 34px;
     }
 
-    .recording__order {
-        display: block;
-    }
-    .recording__foto {
-        margin: 0 auto;
-    }
-
-    .recording__foto-info {
-        padding-top: 0;
-    }
-
     .modalGo__desc, .modalGo__item {
       text-align: left;
     }
@@ -1477,14 +1439,30 @@ ul {
     .prices__item {
         margin-bottom: 25px;
     }
+
+    .prices__item:nth-child(n+2) {
+      margin-top: 50px;
+    }
+
     .prices__img,
     .prices__item:last-child .prices__img {
         height: 625px;
         background-position: center;
     }
-    .prices__img-3 {
-        background-position: -7px center;
+
+    .prices__img-2 {
+      background-image: url("../img/prices-2-mobile.jpg");
+      background-position: center 0;
     }
+
+    .prices__img-3 {
+      background-image: url(../img/prices-3-mobile.jpg);
+    }
+
+    .prices__img-4 {
+      background-image: url(../img/prices-4-mobile.jpg);
+    }
+
     .conditions {
         margin-top: 20px;
     }
@@ -1502,7 +1480,6 @@ ul {
         padding-bottom: 2px;
         border: none;
         font-weight: 600;
-        text-align: center;
         text-transform: uppercase;
     }
     .reviews {
@@ -1530,13 +1507,7 @@ ul {
     .recording__block {
         grid-template-columns: repeat(1, 1fr);
     }
-    .recording__foto {
-        width: 100%;
-        height: 350px;
-        background-size: cover;
-        background-position: center -35px;
-    }
-
+    
     .recording__input {
       padding-top: 5px;
     } 
@@ -1575,7 +1546,7 @@ ul {
     .footer__list_426 {
         display: grid;
         gap: 15px;
-        grid-template-columns: repeat(3, 75px);
+        grid-template-columns: repeat(1, 75px);
         grid-template-rows: repeat(1, 75px);
         align-items: center;
     }
@@ -1596,13 +1567,7 @@ ul {
         transition: border .4s ease-in-out, opacity .4s ease-in-out;
     }
     .footer__icon_426-1 {
-        background-image: url("../img/vk.png");
-    }
-    .footer__icon_426-2 {
         background-image: url("../img/Instagram.png");
-    }
-    .footer__icon_426-3 {
-        background-image: url("../img/telegram.png");
     }
     .footer__icon_426:focus {
         outline: none;

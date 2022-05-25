@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         maxLength: 'Запрещено вводить более 25 символов'
       }
     },
+
     submitHandler: function (thisForm) {
       let formData = new FormData(thisForm);
 
@@ -50,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
 
-      
-      
+
+          
       xhr.open('POST', 'mail.php', true);
       xhr.send(formData);
 
