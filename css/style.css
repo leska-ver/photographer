@@ -1099,7 +1099,10 @@ ul {
     background-size: cover;
   }
 
-  .prices__img-2,
+  .prices__img-2 {
+    background-position: center -2px;
+  }
+
   .prices__img-4 {
     background-position: center 0;
   }
